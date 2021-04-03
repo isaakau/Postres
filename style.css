@@ -1,5 +1,27 @@
 body {
-    background-color: rgb(230, 147, 120);
+    background-color: #F6D8AE;
+}
+
+.cardColor{
+    background-color: #FF85BE;
+}
+
+.navbarColor{
+    background-color: #703D57;
+}
+
+.footerColor{
+    background-color: #241715;
+}
+
+nav{
+    background-color: #402A2C;
+    height: 10vh;
+}
+
+.navText{
+    font-size: 3vh;
+    font-weight: bold;
 }
 
 
@@ -12,5 +34,29 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform 0.4s ease-in-out;
-    height: 18em;
   }
+
+
+
+.centrar{
+    text-align: center;
+    margin: auto;
+}
+
+.centrarVertical{
+    align-items: center;
+}
+
+.card{
+   margin-bottom: 2%;
+   margin-top: 5%; 
+}
+
+.alto{
+    height: 20vh;
+}
+
+.ancho{
+    width: 100%;
+}
+
