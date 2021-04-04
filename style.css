@@ -2,7 +2,6 @@ body {
     background-color: rgb(230, 147, 120);
 }
 
-
 .carousel-item {
     position: relative;
     display: none;
@@ -13,4 +12,13 @@ body {
     backface-visibility: hidden;
     transition: transform 0.4s ease-in-out;
     height: 18em;
-  }
+}
+
+p {
+    text-align: justify;
+}
+
+.carrusel {
+    width: 40%;
+    align-content: center;
+}
