@@ -1,6 +1,87 @@
 body {
-    background-color: rgb(230, 147, 120);
+    background-color: #F6D8AE;
 }
+
+a {
+    color: #FFFF;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #A3A3A3
+}
+
+.cardColor {
+    background-color: #FF85BE;
+}
+
+.navbarColor {
+    background-color: #703D57;
+}
+
+.footerColor {
+    background-color: #241715;
+}
+
+nav {
+    background-color: #402A2C;
+}
+
+.bordeRedonBottom {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.bordeRedonTop {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+
+/* texto del Nav */
+
+.navText {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/* texto nav 2 */
+
+.navText2 {
+    font-size: large;
+    font-weight: 600;
+}
+
+
+/* Titulo texto card */
+
+.cardTitulo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+/* Texto card Precio */
+
+.cardPrecio {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+
+/* Texto card normal semitranspaarente */
+
+.cardNormTran {
+    font-style: italic;
+}
+
+
+/* carrusel items */
 
 .carousel-item {
     position: relative;
@@ -11,13 +92,98 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform 0.4s ease-in-out;
-    height: 18em;
 }
 
-a {
-    color: #FFFF;
-    font-weight: bolder;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
+.centrar {
+    text-align: center;
+    margin: auto;
+}
+
+
+/* NO SIRVE */
+
+.centrarVertical {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* CARD */
+
+.card {
+    margin-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: #703D57;
+}
+
+
+/* IMAGEN DE CARD */
+
+.card-img-top {
+    border-radius: 2rem;
+}
+
+.alto {
+    height: 20vh;
+}
+
+.ancho40 {
+    width: 40%;
+}
+
+.icono {
+    font-size: 2rem;
+    color: #ffff;
+}
+
+
+/* links munú inicio*/
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: white;
+}
+
+
+/* links munú inicio HOVER*/
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.582);
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+/* links inactivo navbar2*/
+
+.nav-pills .nav-link,
+.nav-pills .show>.nav-link {
+    color: #F6D8AE;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* links inactivo navbar2 HOVER*/
+
+.nav-pills .nav-link:hover,
+.nav-pills .show>.nav-link {
+    color: #FF85BE;
+    font-weight: bold;
+}
+
+
+/* links ACTIVO navbar2 */
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #703D57;
+    background-color: #F6D8AE;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 5rem;
 }
