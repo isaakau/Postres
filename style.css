@@ -21,6 +21,18 @@ h1 {
     margin-left: 10%;
 }
 
+a {
+    color: #FFFF;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #A3A3A3
+}
+
 
 /*CLASES*/
 
