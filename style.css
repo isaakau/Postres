@@ -90,7 +90,7 @@ a:hover {
 }
 
 
-/* Texto card normal semitranspaarente */
+/* Texto card normal italic */
 
 .cardNormTran {
     font-style: italic;
@@ -114,15 +114,6 @@ a:hover {
 .centrar {
     text-align: center;
     margin: auto;
-}
-
-
-/* NO SIRVE */
-
-.centrarVertical {
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 
 
