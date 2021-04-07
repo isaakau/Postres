@@ -236,3 +236,8 @@ a:hover {
     font-size: x-large;
     text-align: justify;
 }
+
+footer {
+    margin-top: auto;
+    padding-bottom: 0px;
+}
