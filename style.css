@@ -70,6 +70,12 @@ a:hover {
     text-align: center;
 }
 
+/* texto de lista inicio */
+.li-ini{
+    font-size: x-large;
+    text-align: justify;
+}
+
 /* texto del Nav */
 
 .navText {
@@ -110,7 +116,7 @@ a:hover {
 }
 
 
-/* carrusel items */
+/* carrusel items boostrap*/
 
 /* .carousel-item {
     position: relative;
