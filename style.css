@@ -34,6 +34,11 @@ a:hover {
 
 /*CLASES*/
 
+.centrar {
+    text-align: center;
+    margin: auto;
+}
+
 .cardColor {
     background-color: #FF85BE;
 }
@@ -56,6 +61,14 @@ a:hover {
     border-top-right-radius: 2rem;
 }
 
+/* texto parrafo inicio */
+.p-ini{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #241715;
+    margin: 2rem;
+    text-align: center;
+}
 
 /* texto del Nav */
 
@@ -99,23 +112,19 @@ a:hover {
 
 /* carrusel items */
 
-.carousel-item {
+/* .carousel-item {
     position: relative;
     display: none;
-    float: left;
+    float: none;
     width: 100%;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform 0.4s ease-in-out;
-    height: 18em;
-}
-
-.centrar {
-    text-align: center;
-    margin: auto;
-}
-
+    background-size: cover;
+    background-position: center;
+    max-height: 25rem;
+} */
 
 /* CARD */
 
@@ -192,4 +201,11 @@ a:hover {
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 5rem;
+}
+
+#whatsapp-img{
+    padding: 3rem;
+    width: 16rem;
+    margin: auto;
+
 }
