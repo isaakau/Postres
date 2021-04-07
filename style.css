@@ -97,7 +97,7 @@ a:hover {
 }
 
 
-/* carrusel items */
+/* carrusel items 
 
 .carousel-item {
     position: relative;
@@ -110,6 +110,7 @@ a:hover {
     transition: transform 0.4s ease-in-out;
     height: 18em;
 }
+*/
 
 .centrar {
     text-align: center;
@@ -201,4 +202,42 @@ a:hover {
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 5rem;
+}
+
+.map-responsive iframe {
+    margin: 5%;
+    left: 0;
+    top: 0;
+    height: 50vh;
+    width: 60%;
+}
+
+#whatsapp-img {
+    padding: 3rem;
+    width: 16rem;
+    margin: auto;
+}
+
+
+/* texto parrafo inicio */
+
+.p-ini {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #241715;
+    margin: 2rem;
+    text-align: center;
+}
+
+
+/* texto de lista inicio */
+
+.li-ini {
+    font-size: x-large;
+    text-align: justify;
+}
+
+footer {
+    margin-top: auto;
+    padding-bottom: 0px;
 }
