@@ -13,6 +13,7 @@
 </head>
 
 <body class="container-fluid">
+<section>
     <!--HEADER-->
     <header>
         <!--MENÚ PRINCIPAL-->
@@ -41,7 +42,7 @@
     </header>
 
     <!--CARRUSEL DE IMAGENES-->
-    <section>
+    <section class="">
         <div id="carouselInicio" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -68,49 +69,60 @@
 
     <!-- Pequeña descripción -->
     <section>
-        <divc class="container centrar p-ini">
-            <p>Bienvenido al rincón donde puedes encontrar diferentes tipos de postre a tu medida </p>
-            </div>
+        <div class="container centrar p-ini">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Bienvenido al rincón donde puedes encontrar diferentes tipos de postre a tu medida </p>
+                    </div>
+                </div>
+        </div>
     </section>
 
     <!-- Pide por whatsapp -->
     <section>
         <div class="container centrar">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <p class="p-ini">Como realizar un pedido</p>
-                    <ol class="li-ini">
-                        <li>Busca que producto deseas comprar en la seccion Productos</li>
-                        <li>Solicitalo a través de Whatsapp adjuntando: </li>
-                        <ul>
-                            <li>Tu nombre</li>
-                            <li>Nombre y cantidad del postre que deseas pedir</li>
-                            <li>Forma de pago</li>
-                            <li>Dirección</li>
-                            <li>Fecha de entrega del producto</li>
-                        </ul>
-                    </ol>
-                </div>
-                <div class="col-12 col-md-6">
-                    <p class="p-ini">Nuestro whatsapp</p>
-                    <p class="p-ini" style="font-size: 3rem">+56 9 12345678</p>
-                    <img src="img/whatsapp(1).png" alt="whatsapp" class="d-block" id="whatsapp-img">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 foot">
+                    <div class="card footerColor">
+                        <div class="card-body">
+                            <p class="p-ini">Como realizar un pedido</p>
+                            <ol class="li-ini">
+                                <li>Busca que producto deseas comprar en la seccion Productos</li>
+                                <li>Solicitalo a través de Whatsapp adjuntando: </li>
+                                <ul>
+                                    <li>Tu nombre</li>
+                                    <li>Nombre y cantidad del postre que deseas pedir</li>
+                                    <li>Forma de pago</li>
+                                    <li>Dirección</li>
+                                    <li>Fecha de entrega del producto</li>
+                                </ul>
+                            </ol>
+                        </div>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="card navbarColor">
+                        <div class="card-body">
+                            <img src="img/whatsapp(1).png" alt="whatsapp" id="whatsapp-img">
+                            <p class="p-ini">Nuestro whatsapp</p>
+                            <p class="p-ini">+56 9 12345678</p>
+                            <img src="img/frame.png" alt="QR" id="qr-img">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!--FOOTER-->
-    <footer class="alto footerColor bordeRedonTop">
-        <!--en el footer faltan los links a redes sociales y los créditos de la página-->
-        =======
-        <footer class="footer alto footerColor bordeRedonTop">
-            <!--Logo-->
-            <div class="container-fluid">
-                hola
-            </div>
-        </footer>
-
+    <!--en el footer faltan los links a redes sociales y los créditos de la página-->
+    <footer class="footer alto footerColor bordeRedonTop">
+        <!--Logo-->
+        <div class="container-fluid">
+            hola
+        </div>
+    </footer>
+</section>
         <!--Popper y Bootstraps juntos-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
