@@ -94,6 +94,7 @@ a:hover {
 
 .cardNormTran {
     font-style: italic;
+    padding-bottom: 1rem;
 }
 
 
@@ -251,8 +252,9 @@ footer {
 /* imagen QR */
 #qr-img{
     width: 15rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .nav-color{
