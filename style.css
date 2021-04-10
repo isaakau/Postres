@@ -218,7 +218,6 @@ a:hover {
     font-weight: bolder;
     color: #F6D8AE;
     text-align: center;
-    margin-bottom: 0;
 }
 
 
@@ -278,4 +277,12 @@ span a {
 
 .margen5 {
     margin: 5%;
+}
+
+.sin-margen-bottom p{
+    margin-bottom: 0rem;
+}
+
+#footer-h-prod{
+    height: 20vh;
 }
