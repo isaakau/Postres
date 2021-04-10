@@ -241,3 +241,9 @@ footer {
     margin-top: auto;
     padding-bottom: 0px;
 }
+
+.pMenu {
+    color: #241715;
+    font-size: 40px;
+    font-weight: bold;
+}
