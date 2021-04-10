@@ -10,8 +10,8 @@ nav {
 
 .parrafoAcercade {
     text-align: justify;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
     font-size: large;
 }
 
@@ -269,4 +269,8 @@ footer {
 
 .nav-color {
     background-color: #402A2C;
+}
+
+#cardAcercade {
+    margin-left: 5%;
 }
