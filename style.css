@@ -2,6 +2,7 @@
 
 body {
     background-color: #F6D8AE;
+    font-family: 'Kalam', cursive;
 }
 
 nav {
@@ -89,7 +90,7 @@ a:hover {
 }
 
 
-/* Texto card normal semitranspaarente */
+/* Texto card italic */
 
 .cardNormTran {
     font-style: italic;
@@ -97,20 +98,11 @@ a:hover {
 }
 
 
-/* carrusel items 
+/* Texto descriptivo cards*/
 
-.carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform 0.4s ease-in-out;
-    height: 18em;
+.cardtextdesc {
+    font-size: large;
 }
-*/
 
 .centrar {
     text-align: center;
