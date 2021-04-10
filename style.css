@@ -94,6 +94,7 @@ a:hover {
 
 .cardNormTran {
     font-style: italic;
+    padding-bottom: 1rem;
 }
 
 
@@ -213,8 +214,8 @@ a:hover {
 }
 
 #whatsapp-img {
-    padding: 3rem;
-    width: 16rem;
+    padding: 1rem;
+    width: 6rem;
     margin: auto;
 }
 
@@ -224,9 +225,9 @@ a:hover {
 .p-ini {
     font-size: xx-large;
     font-weight: bolder;
-    color: #241715;
-    margin: 2rem;
+    color: #F6D8AE;
     text-align: center;
+    margin-bottom: 0;
 }
 
 
@@ -234,11 +235,12 @@ a:hover {
 
 .li-ini {
     font-size: x-large;
-    text-align: justify;
+    text-align: left;
+    color: #F6D8AE;
 }
 
 footer {
-    margin-top: auto;
+    margin-top: 5rem;
     padding-bottom: 0px;
 }
 
@@ -246,4 +248,25 @@ footer {
     color: #241715;
     font-size: 40px;
     font-weight: bold;
+}
+
+
+/* no lo estoy usando */
+
+.texto-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+}
+
+
+/* imagen QR */
+
+#qr-img {
+    width: 15rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.nav-color {
+    background-color: #402A2C;
 }
