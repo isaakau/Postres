@@ -272,3 +272,13 @@ footer {
 #cardAcercade {
     margin-left: 5%;
 }
+
+
+/* elementos inline */
+
+span a {
+    display: inline;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-weight: bold;
+}
