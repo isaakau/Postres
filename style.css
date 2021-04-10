@@ -8,11 +8,12 @@ nav {
     background-color: #402A2C;
 }
 
-.parrafoAcercade {
+#parrafoAcercade {
     text-align: justify;
-    margin-right: 2%;
-    margin-left: 2%;
-    font-size: large;
+    margin-top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    font-size: x-large;
 }
 
 h1 {
@@ -269,8 +270,8 @@ footer {
     background-color: #402A2C;
 }
 
-#cardAcercade {
-    margin-left: 5%;
+.margenAcercade {
+    margin-top: 5%;
 }
 
 
@@ -281,4 +282,8 @@ span a {
     margin-left: 2%;
     margin-right: 2%;
     font-weight: bold;
+}
+
+.margen5 {
+    margin: 5%;
 }
