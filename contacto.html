@@ -49,27 +49,38 @@
 
     <!--FORMULARIO MENSAJE-->
     <section>
-        <div class="container centrar">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 card text-white navbarColor">
-                    <form class="margen5">
+                    <form class="margen5 needs-validation" action="#" method="GET">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellido">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
                         </div>
                         <div class="form-group">
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellidos" required>
+                        </div>
+                        <div class="form-group has-validation">
                             <label for="correo">Correo electrónico</label>
-                            <input type="email" class="form-control" id="correo" placeholder="ejemplo@mail.com">
+                            <input type="email" class="form-control" id="correo" placeholder="ejemplo@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Teléfono de contacto</label>
+                            <input type="telefono" class="form-control" id="tel" placeholder="+56 9 12345678">
                         </div>
                         <div class="form-group">
                             <label for="mensaje">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Su mensaje va aquí"></textarea>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba aquí su mensaje" required></textarea>
+                        </div>
+                        <!-- botones enviar y limpiar -->
+                        <div class="margen5-top centrar">
+                            <button type="submit" class="btn btn-light btn-lg">Enviar</button>
+                            <button type="reset" class="btn btn-light btn-lg">Limpiar</button>
                         </div>
                     </form>
-                    <div class="card-footer">
-                        <button type="button" class="btn btn-light btn-lg">Enviar</button>
-                    </div>
                 </div>
+
                 <!--LINK A WHATSAPP-->
                 <div class="col-12 col-lg-6">
                     <div class="centrar container">
@@ -109,7 +120,9 @@
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 

@@ -123,7 +123,6 @@ a:hover {
 
 .card {
     margin-bottom: 2%;
-    margin-top: 5%;
     border-radius: 2rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     color: #703D57;
@@ -261,10 +260,6 @@ footer {
     background-color: #402A2C;
 }
 
-.margenAcercade {
-    margin-top: 5%;
-}
-
 
 /* elementos inline */
 
@@ -273,6 +268,7 @@ span a {
     margin-left: 2%;
     margin-right: 2%;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .margen5 {
@@ -289,4 +285,27 @@ span a {
 
 #margen-i-2rem{
     margin-left: 2rem;
+}
+
+/* height card productos */
+/* chocolates */
+.h-card-ch{
+    height: 62vh;
+}
+/* tortas */
+.h-card-t{
+    height: 68vh;
+}
+/* postres */
+.h-card-p{
+    height: 68vh;
+}
+
+.margen5-top{
+    margin-top: 5%;
+}
+
+label {
+    margin-top: 2%;
+
 }
