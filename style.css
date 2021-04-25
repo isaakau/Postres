@@ -317,11 +317,12 @@ span a {
 
 label {
     margin-top: 2%;
+    color: #703D57;
 }
 
 input.error,
 textarea.error {
-    border: 1px dashed #ff0000;
+    border: 2px dashed #ff0000;
     font-weight: 300;
     color: #ff0000;
 }
@@ -331,4 +332,15 @@ label.error {
     font-size: 1rem;
     display: block;
     margin-top: 5px;
+}
+
+input.valid,
+textarea.valid {
+    border: 2px solid #008000;
+}
+
+.bordeInput {
+    border-style: solid;
+    border-color: #FF85BE;
+    border-width: 2px;
 }

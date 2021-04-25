@@ -1,34 +1,13 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function(form) {
-            form.addEventListener('submit', function(event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-        })
-})
-
 $(document).ready(function() {
     $("#formularioContacto").validate({
         rules: {
             nombre: {
                 required: true,
-                minlenght: 3
+                minlength: 3
             },
             apellido: {
                 required: true,
-                minlenght: 3
+                minlength: 3
             },
             correo: {
                 required: true,
@@ -36,18 +15,25 @@ $(document).ready(function() {
             },
             telefono: {
                 required: true,
-                number: true
+                number: true,
+                minlength: 9,
+                maxlength: 9
+            },
+            mensaje: {
+                required: true,
+                minlength: 10,
+                maxlength: 150
             }
 
         },
         messages: {
             nombre: {
                 required: "Debe ingresar su nombre",
-                minlenght: "El nombre debe tener mínimo 3 caracteres"
+                minlength: "El nombre debe tener mínimo 3 carácteres"
             },
             apellido: {
                 required: "Debe ingresar su apellido",
-                minlenght: "El apellido debe tener mínimo 3 caracteres"
+                minlength: "El apellido debe tener mínimo 3 carácteres"
             },
             correo: {
                 required: "Debe ingresar su correo electrónico",
@@ -55,7 +41,14 @@ $(document).ready(function() {
             },
             telefono: {
                 required: "Debe ingresar su teléfono",
-                number: "Debe ingresar sólo números"
+                number: "Debe ingresar sólo números",
+                minlength: "El teléfono debe tener 9 dígitos",
+                maxlength: "El teléfono debe tener 9 dígitos"
+            },
+            mensaje: {
+                required: "Debe ingresar un mensaje",
+                minlength: "El mensaje debe tener mínimo 10 carácteres",
+                maxlength: "El mensaje no debe tener mas de 150 carácteres"
             }
         }
 
