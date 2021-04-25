@@ -275,37 +275,60 @@ span a {
     margin: 5%;
 }
 
-.sin-margen-bottom p{
+.sin-margen-bottom p {
     margin-bottom: 0rem;
 }
 
-#footer-h-prod{
+#footer-h-prod {
     height: 20vh;
 }
 
-#margen-i-2rem{
+#margen-i-2rem {
     margin-left: 2rem;
 }
 
+
 /* height card productos */
+
+
 /* chocolates */
-.h-card-ch{
+
+.h-card-ch {
     height: 62vh;
 }
+
+
 /* tortas */
-.h-card-t{
-    height: 68vh;
-}
-/* postres */
-.h-card-p{
+
+.h-card-t {
     height: 68vh;
 }
 
-.margen5-top{
+
+/* postres */
+
+.h-card-p {
+    height: 68vh;
+}
+
+.margen5-top {
     margin-top: 5%;
 }
 
 label {
     margin-top: 2%;
+}
 
+input.error,
+textarea.error {
+    border: 1px dashed #ff0000;
+    font-weight: 300;
+    color: #ff0000;
+}
+
+label.error {
+    color: #ff0000;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
 }
