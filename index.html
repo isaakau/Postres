@@ -117,11 +117,18 @@
 
     <!--Card para poner Api-->
     <section>
-        <div class="container centrar margen5-top">
-            <div class="card navbarColor">
-                <div class="card-body sin-margen-bottom p-ini">
+        <div class="container centrar p-ini margen5-top">
+            <div class="card">
+                <div class="card-body sin-margen-bottom">
+                    <p>Si reservas para un día feriado, llevate un 10% de descuento</p>
+                </div>
+            </div>
+        </div>
+        <div class="container centrar">
+            <div class="card tabla-color">
+                <div class="card-body sin-margen-bottom">
                     <table class="table" id="feriados">
-                        <thead>
+                        <thead class="p-ini">
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
@@ -130,8 +137,8 @@
                                 <th scope="col">Descuento</th>
                             </tr>
                         </thead>
-                        <tbody>
-
+                        <tbody class="p-tabla">
+                            <!--aca va cuerpo desde API-->
                         </tbody>
                     </table>
                 </div>

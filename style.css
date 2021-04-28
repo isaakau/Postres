@@ -344,3 +344,14 @@ textarea.valid {
     border-color: #FF85BE;
     border-width: 2px;
 }
+
+.tabla-color{
+    background-color: #402A2C;
+}
+
+.p-tabla{
+    color: #F6D8AE;
+    font-weight: normal;
+    font-size: 1.4rem;
+    border-color: #F6D8AE;
+}

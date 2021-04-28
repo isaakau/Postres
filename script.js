@@ -88,18 +88,31 @@ $(document).ready(function() {
     });
 });
 */
+// $(document).ready(function() {
+//     $.get("https://apis.digital.gob.cl/fl/feriados, function(data) {
+//         var today = new Date();
+//         var dd = today.getDay();
+//         var mm = today.getMonth() + 1;
+//         $.each(data, function(i, item) {
+//             if (item.fecha.substring(-1, 2) == dd - 27 && item.fecha.substring(-4, 2) == mm + 1) {
+//                 $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
+//                     item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado, hoy esta cerrado" + "</td></tr>");
+//             } else {
+//                 $('#feriados').append("<tr><td>" + "Hoy es día hábil, esta abierto" + "</td><td>");
+//             }
+//         });
+//     });
+// });
+
 $(document).ready(function() {
-    $.get("https://apis.digital.gob.cl/fl/feriados", function(data) {
-        var today = new Date();
-        var dd = today.getDay();
-        var mm = today.getMonth() + 1;
+    var today = new Date();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    console.log(yyyy);
+    $.get("https://apis.digital.gob.cl/fl/feriados/"+yyyy+"/"+mm, function(data) {
         $.each(data, function(i, item) {
-            if (item.fecha.substring(-1, 2) == dd - 27 && item.fecha.substring(-4, 2) == mm + 1) {
-                $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
-                    item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado, hoy esta cerrado" + "</td></tr>");
-            } else {
-                $('#feriados').append("<tr><td>" + "Hoy es día hábil, esta abierto" + "</td><td>");
-            }
+            $('#feriados').append( "<tr><td>" + (i+1) + "</td><td>" + item.nombre + "</td><td>" +
+            item.fecha + "</td><td>" + item.tipo + "</td><td>" + "10%" + "</td></tr>");
         });
     });
 });
