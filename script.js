@@ -104,11 +104,11 @@ $(document).ready(function() {
 //     });
 // });
 
+//Llamada a API Ferias Chile
 $(document).ready(function() {
     var today = new Date();
     var mm = today.getMonth() + 1;
     var yyyy = today.getFullYear();
-    console.log(yyyy);
     $.get("https://apis.digital.gob.cl/fl/feriados/"+yyyy+"/"+mm, function(data) {
         $.each(data, function(i, item) {
             $('#feriados').append( "<tr><td>" + (i+1) + "</td><td>" + item.nombre + "</td><td>" +
