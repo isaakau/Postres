@@ -55,54 +55,6 @@ $(document).ready(function() {
     });
 
 });
-/*
-$(document).ready(function() {
-    $(window).on("load", function() {
-        $.get("https://apis.digital.gob.cl/fl/feriados", function(data) {
-            var today = new Date();
-            var dd = today.getDay();
-            var mm = today.getMonth();
-            $.each(data, function(i, item) {
-                if (item.fecha.substring(-1, 2) == dd && item.fecha.substring(-4, 2) == mm) {
-                    if (item.tipo == "Civil") {
-                        $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
-                            item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado civil de hoy tiene 10% de descuento en postres" + "</td></tr>");
-                    } else {
-                        $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
-                            item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado religioso de hoy tiene envío gratis" + "</td></tr>");
-                    }
-
-                } else if (item.fecha.substring(-1, 2) == dd - 27 && item.fecha.substring(-4, 2) == mm + 1) {
-                    if (item.tipo == "Religioso") {
-                        $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
-                            item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado civil de mañana tiene 10% de descuento en postres" + "</td></tr>");
-                    } else {
-                        $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
-                            item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado religioso de mañana tiene envío gratis" + "</td></tr>");
-                    }
-                } else {
-                    $('#feriados').append("<tr><td>" + "No existen feriados para hoy ni para mañana" + "</td><td>");
-                }
-            });
-        });
-    });
-});
-*/
-// $(document).ready(function() {
-//     $.get("https://apis.digital.gob.cl/fl/feriados, function(data) {
-//         var today = new Date();
-//         var dd = today.getDay();
-//         var mm = today.getMonth() + 1;
-//         $.each(data, function(i, item) {
-//             if (item.fecha.substring(-1, 2) == dd - 27 && item.fecha.substring(-4, 2) == mm + 1) {
-//                 $('#feriados').append("<tr><td>" + item.nombre + "</td><td>" +
-//                     item.fecha + "</td><td>" + item.tipo + "</td></tr>" + "Feriado, hoy esta cerrado" + "</td></tr>");
-//             } else {
-//                 $('#feriados').append("<tr><td>" + "Hoy es día hábil, esta abierto" + "</td><td>");
-//             }
-//         });
-//     });
-// });
 
 //Llamada a API Ferias Chile
 $(document).ready(function() {
@@ -111,8 +63,8 @@ $(document).ready(function() {
     var yyyy = today.getFullYear();
     $.get("https://apis.digital.gob.cl/fl/feriados/"+yyyy+"/"+mm, function(data) {
         $.each(data, function(i, item) {
-            $('#feriados').append( "<tr><td>" + (i+1) + "</td><td>" + item.nombre + "</td><td>" +
-            item.fecha + "</td><td>" + item.tipo + "</td><td>" + "10%" + "</td></tr>");
+            $('#feriados').append("<tr><td>" + (i+1) + "</td><td>" + item.nombre + "</td><td>" +
+            item.fecha + "</td><td>" + item.tipo + "</td></tr>");
         });
     });
 });
